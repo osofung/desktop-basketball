@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://ddfsnsx8ovdah"]
+
+[ext_resource type="Script" uid="uid://31tdkspnthsp" path="res://scripts/menu_title.gd" id="1_y5cs1"]
+[ext_resource type="Texture2D" uid="uid://bkfmlpw25n2ou" path="res://sprites/menu/menu main/Menu main bg.png" id="2_atm8l"]
+[ext_resource type="Texture2D" uid="uid://c7fhyrpvgf7qe" path="res://sprites/menu/menu main/Menu main title.png" id="3_8xc30"]
+[ext_resource type="Texture2D" uid="uid://ccrh77hrlcwbg" path="res://sprites/menu/menu main/Menu main continue.png" id="4_6i02m"]
+[ext_resource type="Texture2D" uid="uid://7tww58oshmms" path="res://sprites/menu/menu main/Menu main newgame.png" id="5_5ey0n"]
+[ext_resource type="Texture2D" uid="uid://c5pqxoecegs1c" path="res://sprites/menu/menu main/Menu main freeplay.png" id="6_c7uka"]
+[ext_resource type="Texture2D" uid="uid://c3v2je3620ayp" path="res://sprites/menu/menu main/Menu main option.png" id="7_xbntb"]
+[ext_resource type="Texture2D" uid="uid://cefm83sxn1ine" path="res://sprites/menu/menu main/Menu main quit.png" id="8_7jao7"]
+
+[node name="MenuTitle" type="Control" unique_id=95593981]
+layout_mode = 3
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+grow_vertical = 2
+size_flags_horizontal = 0
+script = ExtResource("1_y5cs1")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1581993181]
+visible = false
+layout_mode = 1
+offset_right = 514.0
+offset_bottom = 278.0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer" unique_id=260176972]
+layout_mode = 2
+texture = ExtResource("2_atm8l")
+
+[node name="CenterContainer" type="MarginContainer" parent="MarginContainer" unique_id=1076481085]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CenterContainer" unique_id=1695686614]
+layout_mode = 2
+
+[node name="Title" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer" unique_id=1167743258]
+layout_mode = 2
+texture = ExtResource("3_8xc30")
+stretch_mode = 2
+
+[node name="Continue" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer" unique_id=569238710]
+layout_mode = 2
+texture = ExtResource("4_6i02m")
+stretch_mode = 2
+
+[node name="Newgame" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer" unique_id=386469884]
+layout_mode = 2
+texture = ExtResource("5_5ey0n")
+stretch_mode = 2
+
+[node name="Freeplay" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer" unique_id=2122929542]
+layout_mode = 2
+texture = ExtResource("6_c7uka")
+stretch_mode = 2
+
+[node name="Option" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer" unique_id=38645376]
+layout_mode = 2
+texture = ExtResource("7_xbntb")
+stretch_mode = 2
+
+[node name="Quit" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer" unique_id=864243234]
+layout_mode = 2
+texture = ExtResource("8_7jao7")
+stretch_mode = 2
